@@ -44,3 +44,7 @@ Los Closures se usaban bastante como las clases antes de ES6, ya que es una mane
 ## Variables privadas con Closures
 
 JS por su naturaleza no fomenta el uso de datos privados pero por medio de los Closures podemos crear valores que solo puedan ser accedidos por medio de métodos, que no van a estar disponibles fuera de esta función.
+
+## Loops
+
+En un loop nunca ocupar **var**, siempre utilizar **let** para valores que irán cambiando dentro de la ejecución del scope. de lo contrario se genera un closure dentro del ciclo.
