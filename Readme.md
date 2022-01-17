@@ -1,4 +1,4 @@
-# Scope:
+# Scope
 
 Es el alcance que va a tener una variable dentro del código. En otras palabras, el Scope se encargará de decidir a que bloques de código va a acceder una variable.
 
@@ -40,3 +40,7 @@ myFuntion(); // hi
 Los closures son básicamente cuando aprovechamos la habilidad de JavaScript de usar las variables que están en el scope padre de nuestro bloque de código, por eso el global scope es un closure grandote; el bloque myFunction puede usar TODAS las variables que están disponibles en el bloque inmediato anterior.
 
 Los Closures se usaban bastante como las clases antes de ES6, ya que es una manera de mantener variables casi privadas. Qué no se pueda acceder a ellas por fuera.
+
+## Variables privadas con Closures
+
+JS por su naturaleza no fomenta el uso de datos privados pero por medio de los Closures podemos crear valores que solo puedan ser accedidos por medio de métodos, que no van a estar disponibles fuera de esta función.
