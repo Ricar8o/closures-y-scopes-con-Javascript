@@ -20,3 +20,21 @@ Este tipo de búsqueda se llama ámbito léxico. El alcance de una variable se d
 Las variables escritas con la palabra clave var pueden ser redeclaradas, pero esto a futuro puede darnos problemas, así que es mejor no usarla.
 
 Las variables escritas con la palabra clave let no pueden ser redeclaradas, si lo haces mostrara un “error: esta variable ya ha sido declarada” , pero su valor puede ser reasignado
+
+# Closure
+
+(Clausuras o funciones de cierre)
+
+Todo en JavaScript es un objeto.
+
+Un **closure** es la combinación entre una función y el ámbito léxico en el que esta fue declarada. Con esto, la función *recuerda* el ámbito en el que se creó. La mejor forma de entender un closure es por medio de un ejemplo práctico.
+
+```jsx
+var myVar = 'hi';
+function myFunction() {
+	console.log(myVar);
+}
+myFuntion(); // hi
+```
+
+Los closures son básicamente cuando aprovechamos la habilidad de JavaScript de usar las variables que están en el scope padre de nuestro bloque de código, por eso el global scope es un closure grandote; el bloque myFunction puede usar TODAS las variables que están disponibles en el bloque inmediato anterior.
