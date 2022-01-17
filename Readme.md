@@ -38,3 +38,5 @@ myFuntion(); // hi
 ```
 
 Los closures son básicamente cuando aprovechamos la habilidad de JavaScript de usar las variables que están en el scope padre de nuestro bloque de código, por eso el global scope es un closure grandote; el bloque myFunction puede usar TODAS las variables que están disponibles en el bloque inmediato anterior.
+
+Los Closures se usaban bastante como las clases antes de ES6, ya que es una manera de mantener variables casi privadas. Qué no se pueda acceder a ellas por fuera.
